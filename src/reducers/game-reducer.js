@@ -2,45 +2,47 @@ import {
     MOVE_RIGHT, MOVE_LEFT, MOVE_DOWN, ROTATE,
     PAUSE, RESUME, RESTART, GAME_OVER
   } from '../actions'
-  
-  const gameReducer = (state = {}, action) => {
-  
+
+import { defaultState } from '../utils'
+
+const gameReducer = (state = defaultState(), action) => {
+
     switch(action.type) {
-      case ROTATE:
-  
+        case ROTATE:
+
         return state
-  
-      case MOVE_RIGHT:
-  
+
+        case MOVE_RIGHT:
+
         return state
-  
-      case MOVE_LEFT:
-  
+
+        case MOVE_LEFT:
+
         return state
-  
-      case MOVE_DOWN:
-  
+
+        case MOVE_DOWN:
+
         return state
-  
-      case RESUME:
-  
+
+        case RESUME:
+
         return state
-  
-      case PAUSE:
-  
+
+        case PAUSE:
+
         return state
-  
-      case GAME_OVER:
-  
+
+        case GAME_OVER:
+
         return state
-  
-      case RESTART:
-  
+
+        case RESTART:
+
         return state
-  
-      default:
+
+        default:
         return state
     }
-  }
+}
   
-  export default gameReducer
+export default gameReducer
