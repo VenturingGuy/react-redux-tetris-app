@@ -85,8 +85,8 @@ const gameReducer = (state = defaultState(), action) => {
         return state
 
         case RESTART:
+            return defaultState()
 
-        return state
 
         default:
         return state
